@@ -1,0 +1,842 @@
+  <!--Created By ☆Sampath👻-->
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <title>Js String & Array Methods</title>
+  <script src="script.js"> </script>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <h1 class="title">Array Methods</h1>
+    <br/><br/>
+     <div class="notes" style="height:120px;">
+     <b style="margin-left:115px;background-color:white;">| NOTICE |</b><br/>
+  Array indexes start with <u>0</u> .
+  <br/> <u>[0] is the First</u> array element, <br/>
+  <u>[1] is the Second</u> , <br/>
+  <u>[2] is the Third</u> .
+     </div>
+     
+     
+     
+     
+       <h3>Changing elements</h3>
+  <!--change_elem Descrip-->
+  <div class="article_style" style="height:50px;">
+  Array elements are accessed using their <u>Index Number</u>.
+  </div>
+  <!--change_elem Ex:- -->
+  <div class="code_style" style="height:90px;">
+      var x = ["java" , "css" , "c++" , "php"];<small style="color:blue;">// Before</small><br/>
+       <u>x[0]</u> = "html";<br/>
+       <u>x[2]</u> = "javascript";<br/>
+      var y = x;<small style="color:blue;">//After</small><br/>
+  </div>
+  <!--change_elem preview-->
+    <button type="button" id="btn" onclick="change_elem()">Show Output</button>
+      <h4>Before Array (x): <b id="arr_change"></b></h4>
+      <h4>After Array (y): <b id="fir_change"></b></h4>
+  
+    
+       <h3>Length Property</h3>
+  <!--length_prop Descrip-->
+  <div class="article_style">
+  The Length property provides an easy way to <u>append a new element</u> to an array.
+  </div>
+  <!--length_prop Ex:- -->
+  <div class="code_style" style="height:60px;">
+      var x = ["one","two","three","four"];<br/>
+       x[<u>x.length</u>] = "five"; <small style="color:blue;">// x.length = 4</small><br/>
+       var y = x;<br/>
+  </div>
+  <!--length_prop preview-->
+    <button type="button" id="btn" onclick="length_prop()">Show Output</button>
+      <h4>Before Array (x): <b id="arr_length_prop"></b></h4>
+      <h4>After Array (y): <b id="fir_length_prop"></b></h4>
+   
+    
+        <h3>toString()</h3>
+  <!--toString Descrip-->
+  <div class="article_style">
+  The Javasript method toString() converts an <u>array to String</u> of(comma separated) array values.
+  </div>
+  <!--toString Ex:- -->
+  <div class="code_style" style="height:90px;">
+  var x =["hello" , "friends","welcome","to","Sololearn"];<br/>
+  var y =x.<u>toString()</u>;<br/>
+  var z = typeof y;
+  </div>
+  <!--toString preview-->
+    <button type="button" id="btn" onclick="toStr()">Show Output</button>
+      <h4>Array (x): <b id="arr_toString"></b></h4>
+      <h4>Result (y): <b id="fir_toString"></b></h4>
+      <h4>typeof y (z): <b id="sec_toString"></b></h4>
+  
+   
+    
+         <h3>join()</h3>
+  <!--join Descrip-->
+  <div class="article_style" style="height:145px;">
+  <u>1)</u>The join() method also <u>joins</u> all array elements into string, and returns the string.<br/>
+  <u>2)</u>The Element will be separated by a specified separator.<br/>
+  <u>3)</u>The default separator is <u>comma(,)</u> .
+  </div>
+  <!--join Ex:- -->
+  <div class="code_style" style="height:75;">
+     var x = ["welcome "," to ", " Sololearn."];<br/>
+      var y = x.<u>join("  ")</u>;<br/>
+      var z = x.<u>join(" * ")</u>;
+  </div>
+  <!--join preview-->
+    <button type="button" id="btn" onclick="join()"  >Show Output</button>
+      <h4>Array (x): <b id="arr_join"></b></h4>
+      <h4>First Result (y): <b id="fir_join"></b></h4>
+      <h4>Second Result (z): <b id="sec_join"></b></h4>
+    
+    
+         <h3>pop() - Popping</h3>
+  <!--pop Descrip-->
+  <div class="article_style" style="height:60px;">
+  The pop() method <u>removes</u> the <u>last element</u> from an array.
+  </div>
+  <!--pop Ex:- -->
+  <div class="code_style" style='height:70px;'>
+     var x = ["javascript "," is easy"," to Learn."];<br/>
+      var y = x.<u>pop()</u>; <small style="color:blue;">//The value of y is "to learn."</small><br/>
+      var z = x ;
+  </div>
+  <!--pop preview-->
+    <button type="button" id="btn" onclick="pop()"  >Show Output</button>
+      <h4>Array(x): <b id="arr_pop"></b></h4>
+      <h4>Popping (y): <b id="fir_pop"></b></h4>
+      <h4>After Array    (z): <b id="sec_pop"></b></h4>  
+    
+    
+        <h3>push() - pushing</h3>
+  <!--push Descrip-->
+  <div class="article_style" style="height:60px;">
+  The push() method adds a <u>new element</u> to an array(at the <u>end</u>):
+  </div>
+  <!--push Ex:- -->
+  <div class="code_style" style="height:65px;">
+     var x = [" Javascript " , " is "];<br/>
+      var y = x.<u>push(" easy ")</u>; <small style="color:blue;">//The value of y is 3 .</small><br/>
+      var z = x;
+  </div>
+  <!--push preview-->
+    <button type="button" id="btn" onclick="pushing()"  >Show Output</button>
+      <h4>Array (x): <b id="arr_push"></b></h4>
+      <h4>pushing (y): <b id="fir_push"></b></h4>
+      <h4>After Array (z): <b id="sec_push"></b></h4>
+    
+    
+         <h3>shift() - Shifting</h3>
+  <!--shift Descrip-->
+  <div class="article_style" style="height:150px;">
+  <u>1)</u>Shifting is <u>equivalent to popping</u>,work on the first element insted of the last.<br/>
+  <u>2)</u>The shift() method <u>removes the first array element</u> and <u>"shifts"</u> all other elements to a lower index.
+  </div>
+  <!--shift Ex:- -->
+  <div class="code_style">
+     var x = ["one","two","three","four"];<br/>
+      var y = x.<u>shift()</u>;<small style="color:blue;">//Removes first element(one) from x</small><br/>
+      var z = x;
+  </div>
+  <!--shift preview-->
+    <button type="button" id="btn" onclick="shift()"  >Show Output</button>
+      <h4>Array (x): <b id="arr_shift"></b></h4>
+      <h4>shifting (y): <b id="fir_shift"></b></h4>
+      <h4>After Array (z): <b id="sec_shift"></b></h4>
+   
+    
+         <h3>unshift()</h3>
+  <!--unshift Descrip-->
+  <div class="article_style">
+  The unshift() method adds a <u>new element</u> to an array(at the <u>begining</u>), and "unshifts" older elements.
+  </div>
+  <!--unshift Ex:- -->
+  <div class="code_style" style="height:100px;">
+     var x = ["one","two","three","four"];<br/>
+      var y = x.<u>unshift("zero")</u>;<br/>
+      var z = x;<br/>
+      <small style="color:blue;">//This example Y adds a new element(zero) to x .</small><br/>
+      <small style="color:blue;">//Y returns the new Array Length</small><br/>
+  </div>
+  <!--unshift preview-->
+    <button type="button" id="btn" onclick="unshift()"  >Show Output</button>
+      <h4>Array (x): <b id="arr_unshift"></b></h4>
+      <h4>unshifting (y): <b id="fir_unshift"></b></h4>
+      <h4>After Array (z): <b id="sec_unshift"></b></h4>
+    
+    
+         <h3>Deleting Elements</h3>
+  <!--del_elem Descrip-->
+  <div class="article_style">
+  Since Javascript arrays are objects,<br/> elements can be deleted by using the Javascript operator <u>delete</u> .
+  </div>
+  <!--del_elem Ex:- -->
+  <div class="code_style">
+        var x = <br/>
+  ["games", "<i>girls</i>", "coding", "sololearn"];<br/>
+         <u>delete</u> x[1];<br/>
+         var y = x;<br/>
+  </div>
+  <!--del_elem preview-->
+    <button type="button" id="btn" onclick="del_elem()"  >Show Output</button>
+      <h4>Before Array (x): <b id="arr_del_elem"></b></h4>
+      <h4>After Array (y): <b id="fir_del_elem"></b></h4>
+  
+     <br/><br/>
+     <div class="notes" style="height:110px;">
+     <b style="margin-left:115px;background-color:white;">| NOTICE |</b><br/>
+  using <u>delete()</u> on array elements leaves <u>undefined</u> whole in the array.<br/>
+  use <u>pop()</u> or <u>shift()</u> instead.
+     </div>
+     
+     
+     
+     
+     
+            <h3>splice() - Add Elements</h3>
+  <!--splice Descrip-->
+  <div class="article_style" style="height:110px;">
+  The splice() method can be used to <u>add new items</u> to an array.<br/>
+  This method <u>changes</u> the original array.
+  </div>
+   <br/>
+     <div class="notes" style="height:200px;font-size:15px;">
+     <b style="margin-left:115px;background-color:white;">| NOTICE |</b><br/>
+  <ins style="margin-left:10px;">array.splice(2 , 0 , "js" , "php");</ins><br/>
+  <u>1)</u>The first parameter(<u>2</u>) defines the position <u>Where</u> new elements should be <u>added</u>(spliced in).<br/>
+  <u>2)</u>The second parameter(<u>0</u>) defines <u>How many</u> elements should be <u>removed</u>.<br>
+  <u>3)</u>The rest of the parameters(<u>"js" , "php"</u>) define the new elements to be <u>added</u>.<br/>
+     </div>
+  <!--splice Ex:- -->
+  <div class="code_style" style="height:110px;">
+     var x = ["css","sql"];<br/>
+      x.<u>splice</u>(0 , 0 , "<strong>html</strong>" );<br/>
+      var y = x;<br/>
+      x.<u>splice</u>(2 , 0 , "<strong>js</strong>","<strong>php</strong>");<br/>
+      var z = x;<br/>
+  </div>
+  <!--splice preview-->
+    <button type="button" id="btn" onclick="splice()"  >Show Output</button>
+      <h4>Array (x): <b id="arr_splice"></b></h4>
+      <h4>First Result (y): <b id="fir_splice"></b></h4>
+      <h4>Second Result (z): <b id="sec_splice"></b></h4>
+    
+    
+            <h3>splice() - Remove Elements</h3>
+  <!--splice_rm Descrip-->
+  <div class="article_style">
+  With clever parameter setting, you can use splice() to <u>remove elements</u> without leaving "<u>holes</u>" in the array.
+  </div>
+   <br/>
+     <div class="notes" style="height:200px;font-size:15px;">
+     <b style="margin-left:115px;background-color:white;">| NOTICE |</b><br/>
+  <ins style="margin:0 0 0 17%;">array.splice( 1 , 2 );</ins><br/>
+   <u>1)</u>The first parameter(<u>1</u>) defines the position where elements should be <u>added</u>(splice in).<br/>
+   <u>2)</u>The second parameter(<u>2</u>) defines <u>How many</u> elements should be <u>removed</u>.<br/> 
+   <u>3)</u>The rest of the parametes are <u>omitted</u>.no new elements will be added.
+     </div>
+  <!--splice_rm Ex:- -->
+  <div class="code_style" style="height:80px;">
+    var x = ["html","css","js","php","sql"];<br/>
+    var y = x.<u>splice</u>(1,2);<br/>
+    var z = x;<br/>
+  </div>
+  <!--splice_rm preview-->
+    <button type="button" id="btn" onclick="splice_rm()"  >Show Output</button>
+      <h4>Before Array (x): <b id="arr_splice_rm"></b></h4>
+      <h4>Removed (y): <b id="fir_splice_rm"></b></h4>
+      <h4>After Array (z): <b id="sec_splice_rm"></b></h4>
+        
+    
+       <h3>sort()</h3>
+  <!--sort Descrip-->
+  <div class="article_style" style="height:55px;">
+  The sort() method sorts an array <u>alphabetically</u>.
+  </div>
+  <!--sort Ex:- -->
+  <div class="code_style" style="word-wrap:break-word;">
+   var x = ["samsung","sony","htc","huawei","oppo","lg","apple"];<br/>
+   var y = x.<u>sort</u>();
+  </div>
+  <!--sort preview-->
+    <button type="button" id="btn" onclick="sort()">Show Output</button>
+      <h4>Array (x): <b id="arr_sort"></b></h4>
+      <h4>Sorted Array (y): <b id="fir_sort"></b></h4>
+   
+    
+        <h3>reverse()</h3>
+  <!--reverse Descrip-->
+  <div class="article_style" style="height:100px;">
+  The reverse() method <u>reverses</u> the elements in array.<br/>
+  you can use it to <u>sort()</u> an array in     <u>descending order</u>:
+  </div>
+  <!--reverse Ex:- -->
+  <div class="code_style">
+  var x = ["E","B","C","D","A"];<br/>
+  var y = x.<u>sort()</u>;<br/>
+  var z = x.<u>reverse()</u>;
+  </div>
+  <!--reverse preview-->
+    <button type="button" id="btn" onclick="reverse()"  >Show Output</button>
+      <h4>Array (x): <b id="arr_reverse"></b></h4>
+      <h4>Sorted Array (y): <b id="fir_reverse"></b></h4>
+      <h4>Reversed Array (z): <b id="sec_reverse"></b></h4>
+    
+    
+            <h3>Numeric Sort</h3>
+    <br/>
+     <div class="notes" style="height:320px;margin:0 0 10px 0;">
+     <b style="margin-left:115px;background-color:white;">| NOTICE |</b><br/>
+  <u>1)</u>By default, the sort() function sorts values <u>as strings</u>.<br/>
+  <u>2)</u>This works well for strings("Apple" comes before "Banana").<br/>
+  <u>3)</u>However,if numbers are sorted as strings, "25" is <u>bigger than</u> "100" , <u>because</u> "2" is bigger than "1".<br/>
+  <u>4)</u>Because of this, the sort() method will produce <u>incorrect result when sorting numbers</u>.<br/>
+  <u>5)</u>You can fix this by providing a <u>compare function</u>.
+     </div>
+  <!--num_sort Ex:- -->
+  <div class="article_style" style="height:150px;font-size:19px;">
+      var arr = [<u>20 , 50 , 120 , 160 , 80 , 100</u>];<br/>
+      <u>w</u> =  arr.<u>sort</u>();<br/>
+       <u>x1</u> = arr.<u>sort</u>(function(a,b)
+       {return <u>a < b</u>});<br/>
+       <u>x2</u> = arr.<u>sort</u>(function(a,b)
+       {return <u>b - a</u>});<br/>
+       <u>z1</u> = arr.<u>sort</u>(function(a,b)
+       {return <u>a > b</u>});<br/>
+       <u>z2</u> = arr.<u>sort</u>(function(a,b)
+       {return <u>b < a</u>});<br/>
+  </div>
+  
+  <!--num_sort preview-->
+    <button type="button" id="btn" onclick="num_sort()"  >Show Output</button>
+      <h4>Default sort :(<u>w</u>): <b id="fir_num_sort"></b></h4>
+      <h4><u>Descending</u> sort (<u>x1</u>): <b id="sec_num_sort"></b></h4>
+      <h4><u>Descending</u> sort (<u>x2</u>): <b id="thir_num_sort"></b></h4>
+      <h4><u>Ascending</u> sort (<u>z1</u>): <b id="four_num_sort"></b></h4>
+      <h4><u>Ascending</u> sort (<u>z2</u>): <b id="fif_num_sort"></b></h4>
+  
+  
+       <h3>The Compare Function</h3>
+    <br/><br/>
+     <div class="notes" style="height:500px;font-size:17px;">
+     <b style="margin-left:115px;background-color:white;">| NOTICE |</b><br/>
+  <u>1)</u>The purpose of the compare function is to define an <u>alternative</u> sort order.<br/>
+  <u>2)</u>The compare function should return a <u>negative</u> , <u>zero</u> or <u>positive</u> value, depending on the arguments .<br/>
+  <ins>function(a,b){return a-b}</ins><br/>
+  <u>3)</u>when the sort() function compares <u>two values</u> , it sends the values to the compare function, and sorts the values according to the returned  (<u>Negative , Zero , positive</u>)value.<br/>
+  <u>Example :- </u><br/>
+  <u>i)</u>when comparing 40 and 100,the sort() method calls the compare <u>function(40,100)</u>.<br/>
+  <u>ii)</u>The function calculates <u>40-100</u> , and returns <u>-60</u>(a <u>Negative value</u>).<br/>
+  <u>iii)</u>The sort function will sort <u>40</u> as a value lower than <u>100</u>.
+  
+     </div>
+           <h3>Find the Highest or Lowest value</h3>
+  <!--min_max Descrip-->
+  <div class="article_style" style="height:60px;">
+  you can use <u>compare function</u> to find the <u>highest</u> or <u>Lowest</u> value in array.
+  </div>
+  <!--min_max Ex:- -->
+  <div class="code_style" style="height:110px;">
+     var arr = [<u>20 , 100 , 230 , 80 , 50 , 160</u>];<br/>
+      var y = arr.sort(<u>function(a,b){return a-b}</u>);<br/>
+      var min = y[<u>0</u>];<br/>
+      var  x =  arr.sort(<u>function(a,b){return b-a}</u>);<br/>
+      var max = x[<u>0</u>];<br/>
+  </div>
+  <!--min_max preview-->
+    <button type="button" id="btn" onclick="min_max()"  >Show Output</button>
+      <h4>Array (arr): <b id="arr_min_max"></b></h4>
+      <h4>Lowest (min): <b id="fir_min_max"></b></h4>
+      <h4>Highest (max): <b id="sec_min_max"></b></h4>
+  
+    
+             <h3>concat() - Joining Arrays</h3>
+  <!--concat Descrip-->
+  <div class="article_style" style="height:100px;">
+  The concat() method creates a new array by <u>concatenating</u> two arrays.<br/>
+  This method can take <u>any number</u> of array arguments.
+  </div>
+  <!--concat Ex:- -->
+  <div class="code_style" style="height:120px;">
+  var x = ["<u>Android</u>" , "<u>Windows</u>" , "<u>Ios</u>"];<br/>
+  var y = [<u>1</u>,<u>2</u>,<u>3</u>];<br/>
+  var z = ["<u>Html</u>","<u>Css</u>","<u>Js</u>"];<br/>
+     var x_y = x.<u>concat</u>(y);<br/>
+     var x_y_z = x.<u>concat</u>(y , z);<br/>
+  </div>
+  <!--concat preview-->
+    <button type="button" id="btn" onclick="concat()"  >Show Output</button>
+      <h4>Join 2 Arrays (x_y): <b id="fir_concat"></b></h4>
+      <h4>Join 3 Arrays (x_y_z): <b id="sec_concat"></b></h4>
+  
+  
+    
+    
+    
+             <h3>slice() - Slicing an Array</h3>
+  <!--slice Descrip-->
+  <div class="article_style" style="height:200px;font-size:17px;">
+  <u>1)</u>The slice() method slices out <u>a piece of an array</u> into a new array.<br/>
+  <u>2)</u>This method can take <u>two arguments</u> like slice(<u>2,5</u>).<br/>
+  <u>3)</u>The method then selects elements from the <u>start argument</u>, and <u>up to</u>(but not including) the end argument.<br/>
+  <u>4)</u>if the <u>end argument is omitted</u>, like slice(<u>2</u>) , the slice() method slices out the <u>rest</u> of the array.
+  </div>
+  <!--slice Ex:- -->
+  <div class="code_style" style="height:110px;font-size:17px;">
+  var arr = ["<u>Html</u>","<u>Css</u>","<u>Keep</u>","<u>Learning</u>","<u>Javascript</u>"];<br/>
+  var x = arr.<u>slice</u>(1);<br/>
+  var y = arr.<u>slice</u>(3);<br/>
+  var  z = arr.<u>slice</u>(2,5);
+  </div>
+  <!--slice preview-->
+    <button type="button" id="btn" onclick="slice()"  >Show Output</button>
+      <h4>Array (arr): <b id="arr_slice"></b></h4>
+      <h4>slice (1) : <b id="fir_slice"></b></h4>
+      <h4>slice (3) : <b id="sec_slice"></b></h4>
+      <h4>slice (2,5) : <b id="thir_slice"></b></h4>
+  
+    
+    
+             <h3>valueOf()</h3>
+    <br/>
+     <div class="notes" style="height:300px;font-size:17px;">
+     <b style="margin-left:115px;background-color:white;">| NOTICE |</b><br/>
+  <u>1)</u>The valueOf() method is the default <u>behavior</u> for an array.<br/>
+  <u>2)</u>It converts an array to a <u>Primitive value</u>.<br/>
+  <u>3)</u>Javascript will <u>automatically convert</u> an array to a string when a primitive value is <u>expected</u>.<br/>
+  <u>4)</u>Because of this, <u>all these examples will produce the same result</u>.<br/>
+  <u>5)</u>all Javascript objects have the <u>valueOf()</u> and <u>toString()</u> methods.
+  </div>
+  <!--valueOf Ex:- -->
+  <div class="code_style" style="height:100px;">
+  var arr = ["<u>Html</u>","<u>Css</u>","<u>Js</u>"];<br/>
+  <u>fir</u>.innerHTML = arr;<br/>
+  <u>sec</u>.innerHTML = arr.<u>valueOf</u>();<br/>
+  <u>thir</u>.innerHTML = arr.<u>toString</u>();
+  </div>
+  <!--valueOf preview-->
+    <button type="button" id="btn" onclick="value_Of()"  >Show Output</button>
+      <h4>Array (<u>fir</u>): <b id="arr_valueOf"></b></h4>
+      <h4>valueOf (<u>sec</u>): <b id="fir_valueOf"></b></h4>
+      <h4>toString (<u>thir</u>): <b id="sec_valueOf"></b></h4>
+    
+       
+           <h3>lastIndexOf()</h3>
+  <!--lastIndexOf Descrip-->
+  <div class="article_style" style="height:140px;">
+  <u>1)</u>The lastIndexOf() method is used to returns the last index at which  a given element <u>can be found</u> in the array.<br/>
+  <u>2)</u>Or <u>-1</u> if it is not found.<br/>
+  <u>3)</u>case, The array is searched from <u>back to font</u>.
+  </div>
+  <!--lastIndexOf Ex:- -->
+  <div class="code_style" style="height:105px;">
+     var x = ["<i>Python</i>","<i>C++</i>","<i>C</i>","<i>java</i>"];<br/>
+      var y = x.<u>lastIndexOf</u>("<i>Java</i>");<br/>
+      var z = x.<u>lastIndexOf</u>("<i>C</i>" , <u>4</u>); <br/>
+    <u style="font-size:13px;">second parameter(4) returns the starting position for searching backwords</u><br/>
+  </div>
+  <!--lastIndexOf preview-->
+    <button type="button" id="btn" onclick="lastIndexOf()"  >Show Output</button>
+      <h4>Array (x): <b id="arr_lastIndexOf"></b></h4>
+      <h4>search "Java" (y): <b id="fir_lastIndexOf"></b></h4>
+      <h4>search "C" (z): <b id="sec_lastIndexOf"></b></h4>
+    
+    
+             <h3>map()</h3>
+  <!--map Descrip-->
+  <div class="article_style" style="height:100px;">
+  The map() method is used run a <u>function on every item</u> in the array<br/>
+  And <u>returns</u> the results in an array.
+  </div>
+  <!--map Ex:- -->
+  <div class="code_style" style="height:130px;font-size:17px;">
+    function calculateSquare(<u>element</u> , <u>index</u> , <u>array</u>){<br/>
+    <u>return</u> ( <u>element</u> * <u>element</u> );<br/>
+    }<br/>
+    var squareList =  [<u>1,2,3,4,5</u>];<br/>
+    var x = squareList.<u>map</u>(calculateSquare);
+  </div>
+  <!--map preview-->
+    <button type="button" id="btn" onclick="map()"  >Show Output</button>
+      <h4>Array (squareList): <b id="arr_map"></b></h4>
+      <h4>Result (x): <b id="fir_map"></b></h4>
+    
+    
+             <h3>some()</h3>
+  <!--some Descrip-->
+  <div class="article_style" style="height:240px;">
+  <u>1)</u>The some() method executes a callback function <u>once for each element</u> present in the array until it finds one where the <u>callback</u> returns a <u>true value</u>.<br/>
+  <u>2)</u>if one is found,<br/>
+  some immediately return <u>true</u>,<br/> otherwise, <u>some</u> returns <u>false</u>.<br/>
+  <u>3)</u>The example below callback function is <u>NeedToReorder</u>.
+  </div>
+  <!--some Ex:- -->
+  <div class="code_style" style="height:140px;font-size:17px;">
+      function needToReorder(<u>element</u> , <u>index</u> , <u>array</u>){
+      return (<u>element</u> <strong style="font-size:25px;"><</strong> <u>4</u>);}<br/>
+      var a = [<u>5 , 6 , 8 , 5 , 14</u>];<br/>
+      var b = [<u>11 , <strong>2</strong> , 7 , 14 , 5</u>];<br/>
+      var <u>ReorderInv1</u> = a.<u>some</u>(needToReorder);<br/>
+      var <u>ReorderInv2</u> = b.<u>some</u>(needToReorder);
+  </div>
+  <!--some preview-->
+    <button type="button" id="btn" onclick="some()"  >Show Output</button>
+      <h4>ReorderInv1 : <b id="arr_some"></b></h4>
+      <h4>ReorderInv2 : <b id="fir_some"></b></h4>
+  
+    
+             <h3>every()</h3>
+  <!--every Descrip-->
+  <div class="article_style" style="height:140px;">
+  <u>1)</u>The every() method is used run a function <u>on items</u> in the array while that function is <u>returning true</u>.<br/>
+  <u>2)</u>It returns <u>true</u> if the function returns true for <u>every item</u> in the array.
+  </div>
+  <!--every Ex:- -->
+  <div class="code_style" style="height:165px;">
+       function every_test( <u>element</u> , <u>index</u> , <u>array</u>){<br/>
+       return ( <u>element</u> <strong style="font-size:25px;">></strong> <u>4</u>)}<br/>
+      var x = [<u>5 , 6 , 8 , 5 , 14</u>];<br/>
+      var y = [<u>11 , <strong>2</strong> , 7 , 14 , 5</u>];<br/>
+      var <u>fir_every</u> = x.<u>every</u>(every_test);<br/>
+      var <u>sec_every</u> = y.<u>every</u>(every_test);<br/>
+      
+  </div>
+  <!--every preview-->
+    <button type="button" id="btn" onclick="every()"  >Show Output</button>
+      <h4>Fir_every : <b id="fir_inner"></b></h4>
+      <h4>Sec_every : <b id="sec_inner"></b></h4>
+  
+  
+           <h3>filter()</h3>
+  <!--filter Descrip-->
+  <div class="article_style" style="height:100px;">
+  The filter() method is used run a<br/>
+  function <u>on every item</u> in the array and<br/>
+  returns an array of <u>all items</u> for which the function returns <u>true</u>.
+  </div>
+  <!--filter Ex:- -->
+  <div class="code_style" style="height:140px;font-size:17px;">
+   function <i>testing_filter1</i>(<u>element</u> , <u>index</u> , <u>array</u>){<br/>
+    return (<u>element</u> > <u>5</u>);}<br/>
+   function <i>testing_filter2</i>(<u>element</u> , <u>index</u> , <u>array</u>){<br/>
+    return (<u>element</u> < <u>5</u>);}<br/>
+    var num = [<u>1 ,7 , 4 , 2, 6, 5 , 9 , 3</u>];<br/>
+    var x = num.<u>filter</u>(<i>testing_filter1</i>);<br/>
+    var y = num.<u>filter</u>(<i>testing_filter2</i>);<br/>
+  </div>
+  <!--filter preview-->
+    <button type="button" id="btn" onclick="filter()"  >Show Output</button>
+      <h4>Array (num): <b id="arr_filter"></b></h4>
+      <h4>Greater than 5 (x): <b id="fir_filter"></b></h4>
+      <h4>Less than 5 (y): <b id="sec_filter"></b></h4>
+  
+  
+           <h3>forEach()</h3>
+  <!--forEach Descrip-->
+  <div class="article_style" style="height:100px;">
+  The forEach() method executes a callback function once <u>for each element</u> present in the array.
+  </div>
+  <!--forEach Ex:- -->
+  <div class="code_style" style="height:150px;font-size:17px;">
+       function <i>forEach_test</i>(<u>element</u> , <u>index</u> , <u>array</u>){<br/>
+           alert("arr[" + <u>index</u> + "] = " + <u>element</u> + " ;");<br/>
+       }<br/>
+      function for_Each(){<br/> 
+       var x = [<u>1,2,3</u>];<br/>
+              x.<u>forEach</u>(<i>forEach_test</i>);<br/>
+              }
+  </div>
+  <!--forEach preview-->
+    <button type="button" id="btn" onclick="for_Each()"  >Show Output</button>
+      <h4>Array (x): <b id="fir_forEach"></b></h4>
+  
+      
+               <h3>reduce()</h3>
+  <!--reduce Descrip-->
+  <div class="article_style" style="height:100px;">
+  The reduce() method executes a function on <u>every item</u> in the array and <u>collect the results</u> from <u>previous calls</u>.
+  </div>
+  <!--reduce Ex:- -->
+  <div class="code_style" style="height:220px;font-size:17px;">
+  function <i>reduce_test1</i>(<u>previousValue</u> , <u>currentValue</u> , <u>index</u> , <u>array</u>)<i>{</i><br/>
+  return  (<u>previousValue</u> + <u>currentValue</u>);<i>}</i><br/>
+      function <i>reduce_test2</i>(<u>previousValue</u> , <u>currentValue</u> , <u>index</u>, <u>array</u>)<i>{</i><br/>
+              return (<u>currentValue</u> - <u>previousValue</u>);<i>}</i><br/>
+            function reduceTest()<i>{</i><br/>
+            var arr = [<i>2,4,6,8,10</i>];<br/>
+             var x = arr.<u>reduce</u>(<i>reduce_test1</i>);<br/>
+             var y = arr.<u>reduce</u>(<i>reduce_test2</i>);<br/>
+            <i>}</i>
+  </div>
+  <!--reduce preview-->
+    <button type="button" id="btn" onclick="reduceTest()"  >Show Output</button>
+      <h4>Array (arr): <b id="arr_reduce"></b></h4>
+      <h4>previous + current (x): <b id="fir_reduce"></b></h4>
+      <h4>current - previous (y): <b id="sec_reduce"></b></h4>
+   
+     
+     
+              <h3>reduceRight()</h3>
+  <!--reduceRight Descrip-->
+  <div class="article_style" style="height:130px;">
+  The reduceRight() method executes a function on <u>every item</u> in the array and <u>collects the results</u> from <u>previous calls</u>,<br/>
+  but in <u>reverse order</u>.
+  </div>
+  <!--reduceRight Ex:- -->
+  <div class="code_style" style="height:220px;font-size:17px;">
+   function <i>reduceRight_test1</i>(<u>previousValue</u> , <u>currentValue</u> , <u>index</u> , <u>array</u>)<i>{</i><br/>
+      return <u>previousValue</u> + <u>currentValue</u>;<i>}</i><br/>
+   function <i>reduceRight_test2</i>(<u>previousValue</u> , <u>currentValue</u> , <u>index</u>, <u>array</u>)<i>{</i><br/>
+     return <u>currentValue</u> - <u>previousValue</u>;<i>}</i><br/>
+  function reduce_right()<i>{</i><br/>
+                    var arr = [<i>2,4,6,8,10</i>];<br/>
+                    var x = arr.<u>reduceRight</u>(<i>reduceRight_test1</i>);<br/>
+                    var y = arr.<u>reduceRight</u>(<i>reduceRight_test2</i>);<br/>
+                    <i>}</i>
+  </div>
+  <!--reduceRight preview-->
+    <button type="button" id="btn" onclick="reduce_right()"  >Show Output</button>
+      <h4>Array (arr): <b id="arr_reduceRight"></b></h4>
+      <h4>previous + current (x): <b id="fir_reduceRight"></b></h4>
+      <h4>current - previous (y): <b id="sec_reduceRight"></b></h4>
+    
+   
+   
+            <h3>copyWithin()</h3>
+  <!--copyWithin Descrip-->
+  <div class="article_style" style="height:145px;">
+  The copyWithin() method <u>copies array Elements within the array</u> , to and from specified positions.<br/>
+  <u>example (x):-</u><br/>
+   copy the first two array elements to the last two array elements.
+  </div>
+  <!--copyWithin Ex:- -->
+  <div class="code_style" style="height:75px;">
+  var arr = [<u>"Hello","Friend","How","are","You"</u>];<br/>
+  var <u>x</u> = arr.<i>copyWithin</i>(2, 0);<br/>
+  var <u>y</u> = arr.<i>copyWithin</i>(1,2,4);
+  </div>
+  <!--copyWithin preview-->
+    <button type="button" id="btn" onclick="copyWithin()"  >Show Output</button>
+      <h4>Array (arr): <b id="arr_copyWithin"></b></h4>
+      <h4>copyWithin 2,0  (x): <b id="fir_copyWithin"></b></h4>
+      <h4>second Test 1,2,4 (y): <b id="sec_copyWithin"></b></h4>
+  
+    
+             <h3>find()</h3>
+  <!--find Descrip-->
+  <div class="article_style" style="height:220px;font-size:17px">
+  <u>1)</u>The find() method returns the value of the <u>first element</u> in an array thats <u>pass a test</u>(provided as a function).<br/>
+  <u>2)</u>This method executes the function once <u>for each element</u> present in the array.<br/>
+  <u>3)</u>If it finds an array element where the fucntion returns a <u>true value</u>,find() returns the value of that array  element(and <u>does not check</u> the remaining values)<br/>
+  array.<u>find</u><br/><ins style="margin-left:5px;font-size:15px;">(function(<u>currentValue</u> , <u>index</u> , <u>array</u>),<u>thisValue</u>)</ins>
+  </div>
+  <!--find Ex:- -->
+  <div class="code_style" style="height:100px;">
+  var <u>ages</u> = [<i>10,15,20,25,30,35</i>];<br/>
+     function <i>testing_find</i>(<u>age</u>){<br/>
+     return <u>age</u> >= Your_Age;}<br/>
+      var <u>x</u> = ages.<u>find</u>(<i>testing_find</i>);
+  </div>
+  <!--find preview-->
+        <p id="btn" style="margin-left:20%">Your_Age : <input type="number" id="age_value" value="" placeholder="enter your age"></p>
+    <button type="button" id="btn" onclick="find()"  >Show Output</button>
+      <h4>Ages:<b id="arr_find"></b></h4>
+      <h4>Your age above (x): <b id="fir_find"></b></h4>
+   
+   
+   
+            <h3>findIndex()</h3>
+  <!--findIndex Descrip-->
+  <div class="article_style" style="height:210px;font-size:17px;">
+  <u>1)</u>The findIndex() method <u>returns</u> the index of the <u>first element in an array</u> that pass a test(provided as a function)<br/>
+  <u>2)</u>This method executes the function <u>once for each element</u> present in the array.<br/>
+  <u>3)</u>If it finds an array element where the fucntion returns a <u>true value</u>,findIndex() returns the value of that array  element(and <u>does not check</u> the remaining values)<br/>
+  <u>4)</u>Otherwise it returns <u>-1</u>.
+  </div>
+  <!--findIndex Ex:- -->
+  <div class="code_style" style="height:130px;">
+   var <u>ages</u> = [<i>10,15,20,25,30,35,40,45</i>];<br/>
+   function <i>fI_testing</i>(<u>age</u>){<br/>
+      return <u>age</u> >= Your_Age;<br/>
+   }<br/>
+    var x = <u>ages</u>.<u>findIndex</u>(<i>fI_testing</i>);<br/>
+  </div>
+  <!--findIndex preview-->
+      <p id="btn" style="margin-left:20%">Your_Age : <input type="number" id="age_value2" placeholder="enter your age"></p>
+     <button type="button" id="btn" onclick="find_Index()"  >Show Output</button>
+      <h4>Ages : <b id="arr_findIndex"></b></h4>
+      <h4> findIndex your Age above (x): <b id="fir_findIndex"></b></h4>
+   
+    
+            <h3>isArray()</h3>
+  <!--isArray Descrip-->
+  <div class="article_style" style="height:70px;">
+  The isArray() method returns <u>true</u> if the <u>object is an array</u>,and <u>false if not</u>.
+  </div>
+  <!--isArray Ex:- -->
+  <div class="code_style" style="height:50px;">
+  var x = ['<i>Hello</i>','<i>World!</i>'];<br/>
+  var y = <i>Array</i>.<u>isArray</u>(x);
+  </div>
+  <!--isArray preview-->
+    <button type="button" id="btn" onclick="is_Array()"  >Show Output</button>
+      <h4>Array (x): <b id="arr_isArray"></b></h4>
+      <h4>x is an array ? (y): <b id="fir_isArray"></b></h4>
+  
+  
+            <h3>fill()</h3>
+  <!--fill Descrip-->
+  <div class="article_style" style="height:150px;">
+  The fill() method <u>fills all the elements</u> in an array with a <u>static value</u>.<br/>
+  it's possible to specify the <u>index for starting and ending</u> fill(),<br/>
+  By <u>default</u> it changes the <u>whole array</u>.
+  </div>
+  <!--fill Ex:- -->
+  <div class="code_style" style="height:70px;">
+       var arr = ["<i>Mint</i>","<i>Arch</i>","<i>Kali</i>","<i>Suse</i>"];<br/>
+       var y = arr.<u>fill</u>("<i>Fedora</i>", 0 , 2);<br/>
+       var z = arr.<u>fill</u>("<i>Debian</i>");
+  </div>
+  <!--fill preview-->
+    <button type="button" id="btn" onclick="fill_test()"  >Change Linux Distros</button>
+      <h4>Array (x): <b id="arr_fill"></b></h4>
+      <h4>Fill "Fedora" (y): <b id="fir_fill"></b></h4>
+      <h4>Default, Fill "Debian"(z): <b id="sec_fill"></b></h4>
+   
+  
+       <h3>keys()</h3>
+  <!--keys Descrip-->
+  <div class="article_style">
+  The keys() method returns an <u>array iterator object</u> with the <u>keys</u> of an array.
+  </div>
+  <!--keys Ex:- -->
+  <div class="code_style" style="height:50px;">
+  var arr = ["<i>xp</i>","<i>vista</i>","<i>win7</i>","<i>win10</i>"];<br/>
+  var x = arr.<u>keys()</u>;
+  </div>
+  <!--keys preview-->
+    <button type="button" id="btn" onclick="keys_test()">Show Output</button>
+      <h4>Array (arr): <b id="arr_keys"></b></h4>
+      <h4>Result (x): <b id="fir_keys"></b></h4>
+  
+  
+       <h3>entries()</h3>
+  <!--entries Descrip-->
+  <div class="article_style" style="height:240px;">
+  The entries() method returns an <u>array iterator object</u> with <u>key/value pairs</u>.<br/>
+  For each item in the original array, The <u>new iteration object</u> will contain an array,<br/>
+  the new iteration object will contain an array with the <u>index as the key</u>, and the <u>item value as the value</u>.<br/>
+  <u>[0 , "xp"]</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[1 , "vista"]</u> <br/>
+  <u>[2 , "win7"]</u> &nbsp;&nbsp;&nbsp;&nbsp; <u>[3 , "win10"]</u>
+  </div>
+  <!--entries Ex:- -->
+  <div class="code_style" style="height:50px;">
+       var arr = ["<i>xp</i>","<i>vista</i>","<i>win7</i>","<i>win10</i>"];<br/>
+       var x = arr.<u>entries()</u>;
+  </div>
+  <!--entries preview-->
+    <button type="button" id="btn" onclick="entries_test()">Show Output</button>
+      <h4>Array (arr): <b id="arr_entries"></b></h4>
+      <h4>Result (x): <b id="fir_entries"></b></h4>
+      
+      
+  
+       <h3>from()</h3>
+  <!--from Descrip-->
+  <div class="article_style" style="height:210px;">
+  The <u>Array.from()</u> method <u>creates</u> a new array instance <u>from an Array-like</u> or <u>iterable object</u>.<br/>
+  <u>1)</u><strong>array-like objects</strong>(objects with a <u>length property</u> and <u>indexed elements)</u><br/>
+  or<br/>
+  <u>2)</u> <strong>iterable objects</strong>(objects where you can get it's elements, such as <u>Map</u> and <u>Set</u>).
+  </div>
+  <!--from Ex:- -->
+  <div class="code_style" style="height:75px;">
+       x = Array.<u>from</u>("<i>Keep Learning.Good Luck!</i>");<br/>
+       arr_map = <i>new</i> <u>Map</u>([<i>[2,4]</i>,<i>[4,6]</i>,<i>[6,8]</i>]);<br/>
+       y = Array.<u>from</u>(arr_map);
+  </div>
+  <!--from preview-->
+    <button type="button" id="btn" onclick="from_test()">Show Output</button>
+      <h4>Simple From (x): <b id="fir_from"></b></h4>
+      <h4>Array (arr_Map): <b id="arr_from"></b></h4>
+      <h4>From Used to Map (y): <b id="sec_from"></b></h4>
+      
+   <!--Make Text Auto Coloring-->
+    <script>
+    var     nums = 0; // nums = numbers
+    for(nums = 0;nums<13;nums++){
+    var id = document.getElementsByClassName("code_style")[nums].innerHTML;
+    //find characters
+  var match_ing = id.match(/\"/gi);
+  var var_names = [];
+  var stt_fm = [0];
+   for(x=0;x<match_ing.length;x++){
+   var_names[x] = id.indexOf("\"" , stt_fm[x] + 1); 
+   stt_fm[x+1] = var_names[x];
+       //   alert("var_names = " + var_names + "stt_fm = " + stt_fm);
+       }
+       //create words using characters(slice method used)
+    var slc_names = [];
+    var y = 0;
+        for(z=1;z<=match_ing.length;z=z+2){
+       slc_names[y] = id.slice(var_names[z-1]+1 , var_names[z]);
+       y++;
+      }
+   // alert(slc_names);
+      //replace modified words with original words(used replace,splice)
+      rplc = [];
+    rplc[0] = id.replace(slc_names[0] , "<em>"+slc_names[0]+"</em>");
+  for(i=1;i<slc_names.length;i++){
+    rplc[i] = rplc[i-1].replace(slc_names[i] , "<em >"+slc_names[i]+"</em>");
+       }
+  var rplc = rplc.splice(slc_names.length-1,1);
+    //  alert(rplc);
+       document.getElementsByClassName("code_style")[nums].innerHTML = rplc;
+       }
+    </script>
+   <br/><br/><br/>
+    <h2 class="other_src">Other Array Methods Resources</h2>
+  
+  <h3 class="src_type">Websites</h3>
+  <br/>
+  <!--Websites-->
+  <button id="btn"><a href="https://www.w3schools.com/js/js_array_methods.asp" >w3schools</a></button>
+  <br/>
+  <button id="btn"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Mozilla developers</a></button>
+  <br/>
+  <button id="btn"><a href="https://www.tutorialspoint.com/javascript/javascript_arrays_object.htm" >Tutorialspoint</a></button>
+   <br/>
+  <button id="btn"><a href="https://javascript.info/array-methods" >Javascript.info</a></button>
+  <br/>
+           
+  <h3 class="src_type">Youtube Videos</h3>
+  <br/>
+  <!--youtube videos-->
+  <button id="btn"><a href="https://m.youtube.com/watch?v=MeZVVxLn26E" >6min Video Tutorial</a></button>
+  <br/>
+  <button id="btn"><a href="https://m.youtube.com/watch?t=2s&v=qTeeVd8hOFY" >41min Video Tutorial</a></button>
+  <br/>
+  <button id="btn"><a href="https://m.youtube.com/watch?v=rRgD1yVwIvE" >34min Video Tutorial</a></button>
+  <br/><br/>
+  
+    <h2 class="other_src">My Previous Codes</h2>
+    <!--My Other Codes-->
+  <button id="btn" style="margin-left:10%;"><a href="https://code.sololearn.com/WmFRIPpTAiDO/?ref=app" >Javascript String Methods Full Tutorial</a></button>
+  <br/>
+  <button id="btn" style="margin-left:12%;"><a href="https://code.sololearn.com/W5hBnt5m99tZ/?ref=app">Javascript Math Objects Full Tutorial</a></button>
+  <br/>
+  <div class="footer">
+     <b style="margin-left:22%;background-color:cyan;">Special Thanks</b><br/>
+     &nbsp;&nbsp;&nbsp;W3schools.com<br/>
+  &nbsp;&nbsp;&nbsp;Mozilla Developers<br/>
+     &nbsp;&nbsp;&nbsp;Sololearn <br/>
+         &nbsp;&nbsp;&nbsp;Html Code Play app<br/>
+         &nbsp;&nbsp;&nbsp;Javascript pro app
+  </div>
+  <h1 class="title" style="font-size:18px;">Created By ☆Sampath👻</h1>
+      </body>
+  </html>
